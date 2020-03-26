@@ -10,6 +10,8 @@
    - cat  What#Time
 2. Install [DRP](https://provision.readthedocs.io/en/latest/doc/quickstart.html)
     ```bash
+    [root@localhost ~]# nmtui (add the above network config)
+    [root@localhost ~]# sudo firewall-cmd --zone=public --permanent --add-port=8092/tcp
     [root@localhost ~]# mkdir drp ; cd drp
     [root@localhost drp]# curl -fsSL get.rebar.digital/stable | bash -s -- --isolated install
     'dr-provision' service is not running, beginning install process ... 
@@ -57,6 +59,42 @@
       ./drpcli bootenvs uploadiso centos-7-install
 
     [root@localhost drp]# 
+    ```
+    Notes just after install
+    ```
+   [root@localhost ~]# ls
+   anaconda-ks.cfg  drp
+   [root@localhost ~]# du -s drp
+   641768	drp
+   [root@localhost ~]# du
+   12	./drp/assets/startup
+   12	./drp/assets
+   93072	./drp/bin/darwin/amd64
+   93072	./drp/bin/darwin
+   86088	./drp/bin/linux/armv7
+   89224	./drp/bin/linux/arm64
+   91248	./drp/bin/linux/amd64
+   266560	./drp/bin/linux
+   16736	./drp/bin/windows/amd64
+   16736	./drp/bin/windows
+   376368	./drp/bin
+   44	./drp/tools
+   200	./drp/drp-data/saas-content
+   200	./drp/drp-data
+   641768	./drp
+   0	./.pki/nssdb
+   0	./.pki
+   641796	.
+   [root@localhost ~]# df
+   Filesystem              1K-blocks    Used Available Use% Mounted on
+   /dev/mapper/centos-root  13461504 1668280  11793224  13% /
+   devtmpfs                   929064       0    929064   0% /dev
+   tmpfs                      941148       0    941148   0% /dev/shm
+   tmpfs                      941148    8748    932400   1% /run
+   tmpfs                      941148       0    941148   0% /sys/fs/cgroup
+   /dev/sda1                 1038336  148412    889924  15% /boot
+   tmpfs                      188232       0    188232   0% /run/user/0
+   [root@localhost ~]# 
     ```
 3. Start DRP and load isos
     ```
@@ -146,7 +184,7 @@
 5. Manual startup
     ```
     [root@localhost drp]# systemctl status firewalld.service
-    [root@localhost drp]# systemctl stop firewalld.service
+    [root@localhost drp]# systemctl stop firewalld.service (only if you forgot to add 8092)
     [root@localhost drp]# ./dr-provision --base-root=/root/drp/drp-data > drp.log 2>&1 &
     [root@localhost drp]# sudo shutdown --poweroff
     ```
