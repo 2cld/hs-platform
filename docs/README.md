@@ -19,8 +19,10 @@ Automated platform deployment to simulate an isolated small business local netwo
 8. ceph or freenas storage (want to put some sort of storage workflow into the mix)
 
 ## Workplan
-1. Start with edge-lab stack
-2. Add shanes 
+1. [DRP testbench](./drptestbench/)
+2. [Debian install build](./debianinstallbuild/)
+3. [ProxMox install build](./proxmoxinstallbuild/)
+
 ### Index
 - [diagrams](diagrams)
 - [images](images)
@@ -40,4 +42,5 @@ Automated platform deployment to simulate an isolated small business local netwo
 - [dracut](https://dracut.wiki.kernel.org/index.php/Main_Page)
 - [mkinitrd](http://man7.org/linux/man-pages/man8/mkinitrd.8.html)
 - [ProxMox API viewer](https://pve.proxmox.com/pve-docs/api-viewer/)
+- [Logging System](https://github.com/wilreichert/docker-elk-pfSense)
 
