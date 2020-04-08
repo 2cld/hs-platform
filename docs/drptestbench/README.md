@@ -1,5 +1,83 @@
 # drptestbench
 
+## Quick Start
+- Using VirtualBox "DRPTest" launch endpoint at [https://192.168.56.2:8092/](https://192.168.56.2:8092/)
+```bash
+macci:~ cat$ ssh root@192.168.56.2
+root@192.168.56.2's password: 
+Last login: Wed Apr  8 09:47:04 2020 from 192.168.56.1
+[root@localhost ~]# systemctl stop firewalld.service
+[root@localhost ~]# cd drp
+[root@localhost drp]# ./dr-provision --base-root=/root/drp/drp-data > drp.log 2>&1 &
+[1] 3937
+[root@localhost drp]#
+```
+- Access the Digital Rebar UI at [https://192.168.56.2:8092/](https://192.168.56.2:8092/)
+   - Default user: rocketskates pw: r0cketsk8s
+   - System Info $ Preferences
+      - Verify "System Bootstrap Wizard" all green but Change Default Password
+      - System Preferences
+         - Default Workflow: discover-base
+         - Default Stage: discover
+         - Default BootEnv: sledgehammer
+         - Unknown BootEnv: discovery
+   - Subnets
+      - enp0s8 - 192.168.56.2/24
+      - Range - 192.168.56.10-254
+   - Machines and Leases
+      - 192.168.56.10 - bm1 - d08-00-27-7b-08-51.localdomain
+      - 192.168.56.11 - bm2 - d08-00-27-e4-7e-99.localdomain
+      - 192.168.56.12 - bm3 - d08-00-27-0e-21-ec.localdomain
+   - Catalog
+- Turn on BM1, BM2, BM3 PXE boot VM
+
+## Steps - Create custom workflow
+- tbd
+- tbd
+
+## VM Configurations
+1. Create DRPTest VM
+   - OS: Fedora-64bit
+   - Mem: 2048
+   - HD: 8GB
+   - 080027BE58C9 enp0s3: bridged (DHCP)
+   - 0800279A97F5 enp0s8: vboxnet0 (192.168.56.2 static)
+   - root  What#Time      
+   - cat  What#Time
+1. Create BM1-3 VM
+   - OS: Fedora-64bit
+   - Mem: 2048
+   - HD: 8GB
+   - 080027BE58C9 enp0s3: vboxnet0 (DHCP)
+   - Controller: SCSI - VHD 4GB (FIXED)
+   - System: Motherboard: BootOrder "Network"
+
+## DRP Endpoint Basics [https://192.168.56.2:8092/](https://192.168.56.2:8092/)
+- basic [profiles - global](https://portal.rackn.io/#/e/192.168.56.2:8092/profiles/global)
+   - package-repositories
+      ```
+      [
+        {
+          "arch": "x86_64",
+          "installSource": true,
+          "os": [
+            "centos-7",
+            "centos-7-install"
+          ],
+          "tag": "centos-7",
+          "url": "https://192.168.52.2:8091/centos-7/install"
+        }
+      ]
+      ```
+   - access-keys
+      ```
+      {
+         "user": "ssh-rsa AAAyour-id_rsa.pub user@something.comm"
+      }
+     ```
+   - access-ssh-root-mode - without-password
+   
+## Steps - Setup drptestbench
 1. Create DRPTest VM
    - OS: Fedora-64bit
    - Mem: 2048
