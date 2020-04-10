@@ -31,10 +31,6 @@ Last login: Wed Apr  8 09:47:04 2020 from 192.168.56.1
    - Catalog
 - Turn on BM1, BM2, BM3 PXE boot VM
 
-## Steps - Create custom workflow
-- tbd
-- tbd
-
 ## VM Configurations
 1. Create DRPTest VM
    - OS: Fedora-64bit
@@ -44,7 +40,7 @@ Last login: Wed Apr  8 09:47:04 2020 from 192.168.56.1
    - 0800279A97F5 enp0s8: vboxnet0 (192.168.56.2 static)
    - root  What#Time      
    - cat  What#Time
-1. Create BM1-3 VM
+2. Create BM1-3 VM
    - OS: Fedora-64bit
    - Mem: 2048
    - HD: 8GB
@@ -76,7 +72,21 @@ Last login: Wed Apr  8 09:47:04 2020 from 192.168.56.1
       }
      ```
    - access-ssh-root-mode - without-password
-   
+
+## Steps - Create custom workflow
+- tbd
+- tbd
+
+### Custom workflow notes
+- [DRP Add SSH Key to Auth Keys](https://provision.readthedocs.io/en/latest/doc/faq-troubleshooting.html#add-ssh-keys-to-authorized-keys)
+- [DRP Default passwords](https://provision.readthedocs.io/en/latest/doc/faq-troubleshooting.html#what-are-the-default-passwords)
+- [Air Gap Install Instructions](https://provision.readthedocs.io/en/latest/doc/operations/airgap.html)
+- [System Management BIOS API and Specs](https://www.dmtf.org/standards/smbios)
+- [tbd]()
+- [tbd]()
+- [tbd]()
+- [Linux check BIOS settings from the command line](https://www.cyberciti.biz/faq/linux-check-bios-settings-from-the-command-line/)
+- 
 ## Steps - Setup drptestbench
 1. Create DRPTest VM
    - OS: Fedora-64bit
