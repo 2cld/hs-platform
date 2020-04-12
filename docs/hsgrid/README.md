@@ -26,3 +26,5 @@ Note: hsgrid-overview [Edit via draw.io]()
   - local [drp](http://rebar.digital/)
   - iSCSI [drp](http://rebar.digital/) [freeNAS](https://www.freenas.org/)
   - NFS [freeNAS](https://www.freenas.org/)
+  
+  ![hsgrid-overview-CPU-SDN](hsgrid-overview-CPU-SDN.svg)
