@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-12T05:53:21.772Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="R7U_rki6LTpZwbOaXLGc" version="12.9.10" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-04-12T05:56:38.051Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="V4VP50xuppPrq9abR2jx" version="12.9.10" type="github" pages="3">
   <diagram id="96Cq-N8KqIH8uVRwFIOk" name="Overview">
     <mxGraphModel dx="506" dy="267" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="500" pageHeight="300" math="0" shadow="0">
       <root>
@@ -174,16 +174,16 @@
           <mxGeometry x="240" width="80" height="120" as="geometry" />
         </mxCell>
         <mxCell id="Op90g9GdmpZV8O9tdTCq-4" value="hsg03" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
-          <mxGeometry x="320" width="80" height="120" as="geometry" />
+          <mxGeometry x="160" y="160" width="80" height="120" as="geometry" />
         </mxCell>
         <mxCell id="Op90g9GdmpZV8O9tdTCq-5" value="hsg04" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
-          <mxGeometry x="400" width="80" height="120" as="geometry" />
+          <mxGeometry x="240" y="160" width="80" height="120" as="geometry" />
         </mxCell>
         <mxCell id="keYLLZCx4w3tfvv4nFYn-0" value="10GB Cisco" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
-          <mxGeometry x="160" y="120" width="320" height="40" as="geometry" />
+          <mxGeometry x="160" y="120" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="keYLLZCx4w3tfvv4nFYn-1" value="hsv1&lt;br&gt;&lt;br&gt;FreeNAS&lt;br&gt;iSCSI&lt;br&gt;NFS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
-          <mxGeometry x="160" y="160" width="80" height="120" as="geometry" />
+          <mxGeometry x="320" width="80" height="280" as="geometry" />
         </mxCell>
         <mxCell id="keYLLZCx4w3tfvv4nFYn-3" value="1GB" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
           <mxGeometry x="120" y="120" width="40" height="40" as="geometry" />
