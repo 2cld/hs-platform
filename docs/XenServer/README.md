@@ -10,6 +10,7 @@
   ```bash
   bash -c "$(curl -s http://xoa.io/deploy)"
   ```
+  - [https://192.168.1.126/ Default user is admin@admin.net with admin as a password ](http://192.168.1.126/)
   - [Xen Orchestra Community build from source](https://xen-orchestra.com/docs/from_the_sources.html)
   - [Xen Orchestra Installer github](https://github.com/ronivay/XenOrchestraInstallerUpdater)
   - [Lawrence hack of Installer](https://github.com/flipsidecreations/XenOrchestraInstallerUpdater)
