@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-04-12T06:19:23.266Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="bzavtP95xbwYzQaTOo8R" version="12.9.10" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2020-04-15T17:15:41.093Z" agent="5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36" etag="PNvWWKR_gga96R_KABYx" version="12.9.10" type="github" pages="3">
   <diagram id="96Cq-N8KqIH8uVRwFIOk" name="Overview">
     <mxGraphModel dx="506" dy="267" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="500" pageHeight="300" math="0" shadow="0">
       <root>
@@ -163,23 +163,23 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Fta4vVxWCjThTY8wMdYY" name="CPU-SDN">
-    <mxGraphModel dx="732" dy="387" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="500" pageHeight="300" math="0" shadow="0">
+    <mxGraphModel dx="843" dy="416" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="500" pageHeight="300" math="0" shadow="0">
       <root>
         <mxCell id="Op90g9GdmpZV8O9tdTCq-0" />
         <mxCell id="Op90g9GdmpZV8O9tdTCq-1" parent="Op90g9GdmpZV8O9tdTCq-0" />
-        <mxCell id="Op90g9GdmpZV8O9tdTCq-2" value="hsg01&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;&lt;font color=&quot;#009900&quot;&gt;ADM-VLAN 9&lt;br&gt;192.168.9.121/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#7f00ff&quot;&gt;NAS-VLAN 249&lt;br&gt;192.168.249.121/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#cccc00&quot;&gt;HSG-VLAN 13&lt;br&gt;192.168.13.121/24&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
+        <mxCell id="Op90g9GdmpZV8O9tdTCq-2" value="hsg01&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;&lt;font color=&quot;#009900&quot;&gt;ADM-VLAN 9&lt;br&gt;192.168.9.121/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#7f00ff&quot;&gt;NAS-VLAN 249&lt;br&gt;192.168.249.121/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#cccc00&quot;&gt;HSG-VLAN 13&lt;br&gt;192.168.13.121/24&lt;br&gt;&lt;/font&gt;192.168.1.121&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
           <mxGeometry x="210" width="80" height="120" as="geometry" />
         </mxCell>
         <mxCell id="keYLLZCx4w3tfvv4nFYn-0" value="10GB Cisco" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
           <mxGeometry x="210" y="120" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="keYLLZCx4w3tfvv4nFYn-1" value="hsv1&lt;br&gt;&lt;br&gt;FreeNAS&lt;br&gt;iSCSI&lt;br&gt;NFS&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#6600cc&quot;&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;VLAN 249&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;192.168.249.251/24&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
+        <mxCell id="keYLLZCx4w3tfvv4nFYn-1" value="hsg08&lt;br&gt;192.168.1.128&lt;br&gt;&lt;br&gt;Win10hsadmin&lt;br&gt;192.168.1.119&lt;br&gt;&lt;br&gt;CentOS7&lt;br&gt;&lt;br&gt;------------------------&lt;br&gt;? proposed ?&lt;br&gt;hsv1&lt;br&gt;FreeNAS&lt;br&gt;iSCSI&lt;br&gt;NFS&lt;br&gt;&lt;font color=&quot;#6600cc&quot;&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;VLAN 249&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;192.168.249.251/24&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
           <mxGeometry x="370" width="110" height="280" as="geometry" />
         </mxCell>
         <mxCell id="keYLLZCx4w3tfvv4nFYn-3" value="1GB" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
           <mxGeometry x="180" y="120" width="30" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="keYLLZCx4w3tfvv4nFYn-4" value="pfsense&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;WAN 192.168.254.209/24&lt;/font&gt;&lt;br&gt;iPXE 192.168.3.1/24&lt;br&gt;&lt;font color=&quot;#00cc00&quot;&gt;ADM 192.168.9.1/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#7f00ff&quot;&gt;NAS 192.168.249.1/24&lt;br&gt;&lt;/font&gt;&lt;font color=&quot;#cccc00&quot;&gt;HSG 192.168.13.1/24&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
+        <mxCell id="keYLLZCx4w3tfvv4nFYn-4" value="pfsense&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;WAN 192.168.254.209/24&lt;/font&gt;&lt;br&gt;iPXE 192.168.3.1/24&lt;br&gt;&lt;font color=&quot;#00cc00&quot;&gt;ADM 192.168.9.1/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#7f00ff&quot;&gt;NAS 192.168.249.1/24&lt;br&gt;&lt;/font&gt;&lt;font color=&quot;#cccc00&quot;&gt;HSG 192.168.13.1/24&lt;br&gt;&lt;/font&gt;GW 192.168.1.1/24&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
           <mxGeometry x="80" y="40" width="100" height="200" as="geometry" />
         </mxCell>
         <mxCell id="keYLLZCx4w3tfvv4nFYn-5" value="1GB" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
@@ -188,13 +188,13 @@
         <mxCell id="keYLLZCx4w3tfvv4nFYn-6" value="&lt;font color=&quot;#ff0000&quot;&gt;WAN&lt;/font&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
           <mxGeometry y="70" width="50" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="5YD8A6rW1PZKI0WFTY4t-0" value="hsg02&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;&lt;font color=&quot;#009900&quot;&gt;ADM-VLAN 9&lt;br&gt;192.168.9.122/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#7f00ff&quot;&gt;NAS-VLAN 249&lt;br&gt;192.168.249.122/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#cccc00&quot;&gt;HSG-VLAN 13&lt;br&gt;192.168.13.122/24&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
+        <mxCell id="5YD8A6rW1PZKI0WFTY4t-0" value="hsg02&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;&lt;font color=&quot;#009900&quot;&gt;ADM-VLAN 9&lt;br&gt;192.168.9.122/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#7f00ff&quot;&gt;NAS-VLAN 249&lt;br&gt;192.168.249.122/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#cccc00&quot;&gt;HSG-VLAN 13&lt;br&gt;192.168.13.122/24&lt;br&gt;&lt;/font&gt;192.168.1.122&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
           <mxGeometry x="290" width="80" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="5YD8A6rW1PZKI0WFTY4t-1" value="hsg03&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;&lt;font color=&quot;#009900&quot;&gt;ADM-VLAN 9&lt;br&gt;192.168.9.123/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#7f00ff&quot;&gt;NAS-VLAN 249&lt;br&gt;192.168.249.123/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#cccc00&quot;&gt;HSG-VLAN 13&lt;br&gt;192.168.13.123/24&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
+        <mxCell id="5YD8A6rW1PZKI0WFTY4t-1" value="hsg03&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;&lt;font color=&quot;#009900&quot;&gt;ADM-VLAN 9&lt;br&gt;192.168.9.123/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#7f00ff&quot;&gt;NAS-VLAN 249&lt;br&gt;192.168.249.123/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#cccc00&quot;&gt;HSG-VLAN 13&lt;br&gt;192.168.13.123/24&lt;br&gt;&lt;/font&gt;192.168.1.123&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
           <mxGeometry x="210" y="160" width="80" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="5YD8A6rW1PZKI0WFTY4t-2" value="hsg04&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;&lt;font color=&quot;#009900&quot;&gt;ADM-VLAN 9&lt;br&gt;192.168.9.124/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#7f00ff&quot;&gt;NAS-VLAN 249&lt;br&gt;192.168.249.124/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#cccc00&quot;&gt;HSG-VLAN 13&lt;br&gt;192.168.13.124/24&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
+        <mxCell id="5YD8A6rW1PZKI0WFTY4t-2" value="hsg04&lt;br&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;&lt;font color=&quot;#009900&quot;&gt;ADM-VLAN 9&lt;br&gt;192.168.9.124/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#7f00ff&quot;&gt;NAS-VLAN 249&lt;br&gt;192.168.249.124/24&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#cccc00&quot;&gt;HSG-VLAN 13&lt;br&gt;192.168.13.124/24&lt;br&gt;&lt;/font&gt;192.168.1.124&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Op90g9GdmpZV8O9tdTCq-1">
           <mxGeometry x="290" y="160" width="80" height="120" as="geometry" />
         </mxCell>
       </root>
