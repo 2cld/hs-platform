@@ -1,11 +1,72 @@
 # XenServer Config
 [Back to docs Index](../)
 
-## Notes
-- [xcp-ng Homepage](https://xcp-ng.org/)
-- [xcp-ng Github](https://github.com/xcp-ng/xcp)
-- [xcp-ng iso 8.1 Download](http://mirrors.xcp-ng.org/isos/8.1/xcp-ng-8.1.0-2.iso)
-- [xcp-ng quick install tutorial - Lawrence System](https://www.youtube.com/watch?v=mp-pCgYszqU)
+# Quick Start notes
+1. Use Install XCP-ng 8.1 USB key to boot and install
+  - Server Name: hsgXX
+  - Special: xxXCP#xxxx
+  - IP: DHCP (MAC tied to IP 192.168.1.120+Blade#)
+2. GUI Admin
+  - [XOA Appliance install](https://youtu.be/mp-pCgYszqU?t=305)
+    ```bash
+      bash -c "$(curl -s http://xoa.io/deploy)"
+    ```
+  - [Windows xenadmin Client XOA github](https://github.com/xcp-ng/xenadmin/releases/)
+3. Local Storage
+  - Install a hard drive on a XenServer.
+  - Run the following command from the command line interface to display the installed disks:
+    ```bash
+      fdisk -l
+      lsblk
+    ```
+  - Inspect the disks partitions
+    ```bash
+      cfdisk /dev/sdc
+    ```
+  - List the xen server ID
+    ```bash
+      xe host-list
+    ```
+  - Run the following command from the command line interface:
+    ```bash
+      xe sr-create host-uuid<hostid> name-label=<nameLabel> shared=false device-config:device=<devicePath> type=lvm content-type=user
+    ```
+    - hostID: is shown by xe host-list (just tab if your on the server)
+    - nameLabel: is the display name used in XCP-ng
+    - devicePath:  shown in fdisk -l or lsblk /dev/sdc
+  - Example I ran on hsg04
+    ```bash
+    xe sr-create host-uuid=7749xxxx-xxxx-xxxx-xxxx-xxxxxxxxxxb0 name-label-"hsg04d2" shared=false device-config=/dev/sdb type=lvm content-type=user
+    ```
+4. Pass-through Storage
+  - Run the following command from the command line interface to display the installed disks:
+    ```bash
+      lsblk
+    ```
+  - Inspect the disks partitions delete partitions you want to re-use
+    ```bash
+      cfdisk /dev/sdc
+    ```
+  - List the xen server ID
+    ```bash
+      xe host-list
+    ```
+  - Make directory with symlinks to devices you want to pass-through
+    ```bash
+      cd /srv/
+      mkdir pass_drives
+      cd pass_drives
+      ln -s /dev/sdc
+    ```
+  - Run the following command from the command line interface:
+    ```bash
+      xe sr-create name-label=Pass_Drives type=udev content-type=disk device-config:location=/srv/pass_drives 
+    ```
+    - hostID: is shown by xe host-list
+    - nameLabel: is the display name used in XCP-ng
+    - devicePath:  shown in fdisk -l or lsblk - /dev/sdc
+  - fire up vm and connect
+5. Install XOA
   - [XOA Appliance install](https://youtu.be/mp-pCgYszqU?t=305)
   ```bash
   bash -c "$(curl -s http://xoa.io/deploy)"
@@ -13,7 +74,37 @@
   - [https://192.168.1.126/ Default user is admin@admin.net with admin as a password ](http://192.168.1.126/)
   - [Xen Orchestra Community build from source](https://xen-orchestra.com/docs/from_the_sources.html)
   - [Xen Orchestra Installer github](https://github.com/ronivay/XenOrchestraInstallerUpdater)
-  - [Lawrence hack of Installer](https://github.com/flipsidecreations/XenOrchestraInstallerUpdater)
+  - [Lawrence hack of Installer - Lawrence System](https://github.com/flipsidecreations/XenOrchestraInstallerUpdater)
+  
+
+## Notes
+- [xcp-ng Homepage](https://xcp-ng.org/)
+- [xcp-ng Github](https://github.com/xcp-ng/xcp)
+- [xcp-ng iso 8.1 Download](http://mirrors.xcp-ng.org/isos/8.1/xcp-ng-8.1.0-2.iso)
+- [xcp-ng Best Practices](https://github.com/xcp-ng/xcp/wiki/Best-Practices-Guide)
+
+### Tutorials
+- [Tutorial - XCP-ng quick install - Lawrence System](https://www.youtube.com/watch?v=mp-pCgYszqU)
+  - [XOA Appliance install](https://youtu.be/mp-pCgYszqU?t=305)
+  ```bash
+  bash -c "$(curl -s http://xoa.io/deploy)"
+  ```
+  - [https://192.168.1.126/ Default user is admin@admin.net with admin as a password ](http://192.168.1.126/)
+  - [Xen Orchestra Community build from source](https://xen-orchestra.com/docs/from_the_sources.html)
+  - [Xen Orchestra Installer github](https://github.com/ronivay/XenOrchestraInstallerUpdater)
+  - [Lawrence hack of Installer - Lawrence System](https://github.com/flipsidecreations/XenOrchestraInstallerUpdater)
+- [Tutorial - XCP-ng Install 7.4](https://www.youtube.com/watch?v=bG5enpij0e8&feature=youtu.be)
 - [Tutorial - Configuring Citrix XenServer With FreeNAS & ISCSI For Storage](https://www.youtube.com/watch?v=-KmgwQORAX8&list=PLjGQNuuUzvmv1n8W-lDplGiDwlxvSSIcv&index=38)
 - [Tutorial - Virtual Lab Setup - Lawrence System](https://www.youtube.com/watch?v=mXwSMh9uk0w)
-- [xcp-ng Best Practices](https://github.com/xcp-ng/xcp/wiki/Best-Practices-Guide)
+- [Tutorial - XCP-NG 8.0 HA / High Availability Cluster Setup](https://www.youtube.com/watch?v=jvhUY81pBw0
+- [Tutorial - Explaining Resource Pools With Xenserver / XCP-NG & Xen Orchestra](https://www.youtube.com/watch?v=imOsGG9AmOk)
+- [Tutorial - VM Backups, Disaster Recovery and Continuous Replication with Xen Orchestra Backup NG](https://www.youtube.com/watch?v=1tJZAc-A4kU)
+- [Tutorial - XCP-NG & Xenmotion: Migrating Live VM's Between Servers](https://www.youtube.com/watch?v=5XoXQAIjFH8)
+- [Tutorial - How To Load XCP-NG Xenserver PV Drivers via Windows Update & Xen Orchestra](https://www.youtube.com/watch?v=nGfx5upOk8c)
+- [Tutorial - Running pfsense on XCP-NG Xenserver & Installing Xenserver tools](https://www.youtube.com/watch?v=hy6RwgDm1p0)
+- [Tutorial - XCP-NG Stack - How to load XEN Tools in windows VM's](https://www.youtube.com/watch?v=SsuoPzKXnBA)
+- [Tutorial - ]()
+- [Tutorial - ]()
+
+
+
