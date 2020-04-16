@@ -89,7 +89,7 @@
 - [Tutorial - XCP-ng Install 7.4](https://www.youtube.com/watch?v=bG5enpij0e8&feature=youtu.be)
 - [Tutorial - Configuring Citrix XenServer With FreeNAS & ISCSI For Storage](https://www.youtube.com/watch?v=-KmgwQORAX8&list=PLjGQNuuUzvmv1n8W-lDplGiDwlxvSSIcv&index=38)
 - [Tutorial - Virtual Lab Setup - Lawrence System](https://www.youtube.com/watch?v=mXwSMh9uk0w)
-- [Tutorial - XCP-NG 8.0 HA / High Availability Cluster Setup](https://www.youtube.com/watch?v=jvhUY81pBw0
+- [Tutorial - XCP-NG 8.0 HA High Availability Cluster Setup](https://www.youtube.com/watch?v=jvhUY81pBw0)
 - [Tutorial - Explaining Resource Pools With Xenserver XCP-NG & Xen Orchestra](https://www.youtube.com/watch?v=imOsGG9AmOk)
 - [Tutorial - VM Backups, Disaster Recovery and Continuous Replication with Xen Orchestra Backup](https://www.youtube.com/watch?v=1tJZAc-A4kU)
 - [Tutorial - XCP-NG & Xenmotion: Migrating Live VM's Between Servers](https://www.youtube.com/watch?v=5XoXQAIjFH8)
@@ -97,6 +97,8 @@
 - [Tutorial - Running pfsense on XCP-NG Xenserver & Installing Xenserver tools](https://www.youtube.com/watch?v=hy6RwgDm1p0)
 - [Tutorial - XCP-NG Stack - How to load XEN Tools in windows VM's](https://www.youtube.com/watch?v=SsuoPzKXnBA)
 - [Tutorial - How to add additional hard disk in xenserver](https://www.youtube.com/watch?v=HgjfQKr6u1w)
+- [Tutorial - Xenserver Hard Drive Whole Disk Passthrough with XCP-NG](https://www.youtube.com/watch?v=vSDDMIG6Huk)
+- [Tutorial - Citrix Xenserver Adding A Hard Drive](https://www.youtube.com/watch?v=gNLBNUHI1uE)
 - [Tutorial - ]()
 
 
