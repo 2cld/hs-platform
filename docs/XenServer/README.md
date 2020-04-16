@@ -66,22 +66,15 @@
     - nameLabel: is the display name used in XCP-ng
     - devicePath:  shown in fdisk -l or lsblk - /dev/sdc
   - fire up vm and connect
-5. Install XOA
-  - [XOA Appliance install](https://youtu.be/mp-pCgYszqU?t=305)
-  ```bash
-  bash -c "$(curl -s http://xoa.io/deploy)"
-  ```
-  - [https://192.168.1.126/ Default user is admin@admin.net with admin as a password ](http://192.168.1.126/)
-  - [Xen Orchestra Community build from source](https://xen-orchestra.com/docs/from_the_sources.html)
-  - [Xen Orchestra Installer github](https://github.com/ronivay/XenOrchestraInstallerUpdater)
-  - [Lawrence hack of Installer - Lawrence System](https://github.com/flipsidecreations/XenOrchestraInstallerUpdater)
-  
 
 ## Notes
 - [xcp-ng Homepage](https://xcp-ng.org/)
 - [xcp-ng Github](https://github.com/xcp-ng/xcp)
+- [xcp-ng Guest Tools](https://github.com/xcp-ng/xcp/wiki/Guest-Tools)
+- [xcp-ng Graphical Client](https://github.com/xcp-ng/xenadmin/releases/)
 - [xcp-ng iso 8.1 Download](http://mirrors.xcp-ng.org/isos/8.1/xcp-ng-8.1.0-2.iso)
 - [xcp-ng Best Practices](https://github.com/xcp-ng/xcp/wiki/Best-Practices-Guide)
+- [citrix Remove Storate Repository](https://support.citrix.com/article/CTX131328)
 
 ### Tutorials
 - [Tutorial - XCP-ng quick install - Lawrence System](https://www.youtube.com/watch?v=mp-pCgYszqU)
@@ -97,13 +90,13 @@
 - [Tutorial - Configuring Citrix XenServer With FreeNAS & ISCSI For Storage](https://www.youtube.com/watch?v=-KmgwQORAX8&list=PLjGQNuuUzvmv1n8W-lDplGiDwlxvSSIcv&index=38)
 - [Tutorial - Virtual Lab Setup - Lawrence System](https://www.youtube.com/watch?v=mXwSMh9uk0w)
 - [Tutorial - XCP-NG 8.0 HA / High Availability Cluster Setup](https://www.youtube.com/watch?v=jvhUY81pBw0
-- [Tutorial - Explaining Resource Pools With Xenserver / XCP-NG & Xen Orchestra](https://www.youtube.com/watch?v=imOsGG9AmOk)
-- [Tutorial - VM Backups, Disaster Recovery and Continuous Replication with Xen Orchestra Backup NG](https://www.youtube.com/watch?v=1tJZAc-A4kU)
+- [Tutorial - Explaining Resource Pools With Xenserver XCP-NG & Xen Orchestra](https://www.youtube.com/watch?v=imOsGG9AmOk)
+- [Tutorial - VM Backups, Disaster Recovery and Continuous Replication with Xen Orchestra Backup](https://www.youtube.com/watch?v=1tJZAc-A4kU)
 - [Tutorial - XCP-NG & Xenmotion: Migrating Live VM's Between Servers](https://www.youtube.com/watch?v=5XoXQAIjFH8)
 - [Tutorial - How To Load XCP-NG Xenserver PV Drivers via Windows Update & Xen Orchestra](https://www.youtube.com/watch?v=nGfx5upOk8c)
 - [Tutorial - Running pfsense on XCP-NG Xenserver & Installing Xenserver tools](https://www.youtube.com/watch?v=hy6RwgDm1p0)
 - [Tutorial - XCP-NG Stack - How to load XEN Tools in windows VM's](https://www.youtube.com/watch?v=SsuoPzKXnBA)
-- [Tutorial - ]()
+- [Tutorial - How to add additional hard disk in xenserver](https://www.youtube.com/watch?v=HgjfQKr6u1w)
 - [Tutorial - ]()
 
 
