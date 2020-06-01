@@ -102,4 +102,49 @@
 - [Tutorial - ]()
 
 
+### Setup disk on hsg03
+```
+root@192.168.1.123's password: 
+Last login: Mon May 25 20:20:31 2020 from 192.168.1.120
+[17:01 hsg03 ~]# ls
+CentOS-7-x86_64-DVD-2003.iso
+[17:01 hsg03 ~]# lsblk
+NAME                                                            MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sdb                                                               8:16   0 136.7G  0 disk 
+├─sdb2                                                            8:18   0   512M  0 part 
+├─sdb3                                                            8:19   0 136.2G  0 part 
+└─sdb1                                                            8:17   0  1007K  0 part 
+sda                                                               8:0    0 136.7G  0 disk 
+├─sda4                                                            8:4    0   512M  0 part 
+├─sda2                                                            8:2    0    18G  0 part 
+├─sda5                                                            8:5    0     4G  0 part /var/log
+├─sda3                                                            8:3    0  95.2G  0 part 
+│ └─VG_XenStorage--b4394697--21e5--f609--94dc--97817d48b2c3-MGT 253:0    0     4M  0 lvm  
+├─sda1                                                            8:1    0    18G  0 part /
+└─sda6                                                            8:6    0     1G  0 part [SWAP]
+[17:04 hsg03 ~]# xe host-list
+uuid ( RO)                : 9d41f57b-2da4-492d-8a7e-79309ec72ac7
+          name-label ( RW): hsg03
+    name-description ( RW): Default install
+
+
+uuid ( RO)                : de0ae348-63d3-402f-aeba-04091be1bca9
+          name-label ( RW): hsg02
+    name-description ( RW): Default install
+
+
+uuid ( RO)                : 7749899f-1c7b-465f-9123-4e0dc59077b0
+          name-label ( RW): hsg08
+    name-description ( RW): Default install
+
+
+uuid ( RO)                : 5f64dbdf-781e-4b86-be03-6be544870402
+          name-label ( RW): hsg04
+    name-description ( RW): Default install
+
+
+[17:05 hsg03 ~]# xe sr-create host-uuid=9d41f57b-2da4-492d-8a7e-79309ec72ac7  name-label=hsg03d2 shared=false device-config:device=/dev/sdb type=lvm content-type=user
+729d3457-7a10-17d8-0e8f-68bd0042b712
+[17:06 hsg03 ~]# 
+```
 
