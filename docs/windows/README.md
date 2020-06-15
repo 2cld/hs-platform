@@ -41,7 +41,7 @@
   - Download and install Chrome Downloads/ChromeSetup
   - Download and install FireFox Downloads/Firefox Installer
   - Download and install Edge Downloads/MicrosoftEdgeSetup
-4. Connect NFS Storage
+4. Connect [NFS Storage](https://graspingtech.com/mount-nfs-share-windows-10/)
   - On VM: CD/DVD: Storage: hsfreenas ISO: Win10_1909_English_x64.iso
   - Install NFS Client
     1. Open "Control Panel"
@@ -77,11 +77,13 @@
     ```
 5. Install Ubuntu 20.04 LTS app via Play store
   - Start session with hsadmin - normalpw
+  - Where is [file system root in windows](https://askubuntu.com/questions/759880/where-is-the-ubuntu-file-system-root-directory-in-windows-subsystem-for-linux-an)
+  - Did not get working but... [nfs mount from windows subsystem](https://superuser.com/questions/1128634/how-to-access-mounted-network-drive-on-windows-linux-subsystem/1261563)
   - Install nsf-common
     1. sudo apt install nfs-common
-  - NFS Mount the 192.168.1.2/mnt/hspool to /mnt/hspool
+  - NFS Mount the 192.168.1.2:/mnt/hspool to /mnt/hspool
     1. sudo mkdir -p /mnt/hspool
-    2. sudo mount 192.168.1.2/mnt/hspool /mnt/hspool
+    2. sudo mount 192.168.1.2:/mnt/hspool /mnt/hspool -vvv
     3. Verify: df -h
     4. sudo touch /mnt/hspool/thistest.txt
     5. ls -l /mnt/hspool/thistest.txt
