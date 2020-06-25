@@ -1,17 +1,24 @@
 # Orchestrator Definition
-Ralph sent an email with [Orchestrator Definition](https://docs.google.com/document/d/1QZtYFcDpkfOKJbFhkw-XPuD1eix0ovXSOe3cyEQivQQ/edit) attached.  Note the link is the actual attached google doc.  These are my response notes.
+Ralph sent an email with [Orchestrator Definition](https://docs.google.com/document/d/1QZtYFcDpkfOKJbFhkw-XPuD1eix0ovXSOe3cyEQivQQ/edit) attached.  The link is the  google doc attached in the email.
 
 The question being asked was:
 How does RansomShield define “network” to select which devices should be self-healed?
 
-The questions before seemed to seek:
+1. One feature of Ransom Shield is the “Self-Healing’ feature. This feature will train the local agent(app) on known malware to other devices on the network
+2. Define what end-points will “react” or change status or blocking activities if one end-point is infected by ransomware. This is for the self-healing feature.
+3. How will the solution decide which end points should be classified as “connected” to the infected end-point.
+
+My summary of the question:
 What is the User interface mechanisim Hacker Strike should implement to regulate RansonShield App Process Blocker within an associated user group.
 
+So, as I look at this, I think the answer is:
+Use the Baseline Behavior Injector, where the user's 'acceptable' behavior is captured.  In my head this is where all expectations should be exercised, resources and interconnects mapped.
+
+
 Notes:
-I do like the new diagram, and if you notice the labels... it is very 'Ralph'.  The diagram does not show up in the above link, but the pdf attached to the email:
+The new diagram with numbered lables.
 
 ![hs-arch](./images/hs-arch.png)
-
 
 1. Dashboards and Management
 2. RansomShield App
@@ -22,7 +29,7 @@ I do like the new diagram, and if you notice the labels... it is very 'Ralph'.  
    3. Process Blocker
 5. Cloud Console
 
-It looks as if the numbering is some sort of workflow for Ralph's head... just a guess.  As for me, I sorted this out in my head [See docs/README.md](./README.md) :
+I do not know the intention of the numbering.  As for myself, I sorted my mental map of the dataflow a few months ago [See docs/README.md](./README.md) :
 
 1. hs-client - used to collect telemetry and execute behavior mitagation
 2. hs-telemetry - api based web service target used by client for telemetry collection
@@ -32,5 +39,4 @@ It looks as if the numbering is some sort of workflow for Ralph's head... just a
 6. hs-customer-webportal - gui portal for ralph-types to show client value
 7. hs-automation-webportal - gui portal for ralph-types... IMHO this should just be a deployment CI/CD pipeline
 
-So, as I look at this, I think the answer is:
-Use your Baseline Behavior Injector.
+
