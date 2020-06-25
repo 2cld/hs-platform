@@ -2,6 +2,7 @@
 Ralph sent an email with [Orchestrator Definition](https://docs.google.com/document/d/1QZtYFcDpkfOKJbFhkw-XPuD1eix0ovXSOe3cyEQivQQ/edit) attached.  The link is the  google doc attached in the email.
 
 The question being asked was:
+
 How does RansomShield define “network” to select which devices should be self-healed?
 
 1. One feature of Ransom Shield is the “Self-Healing’ feature. This feature will train the local agent(app) on known malware to other devices on the network
@@ -9,11 +10,20 @@ How does RansomShield define “network” to select which devices should be sel
 3. How will the solution decide which end points should be classified as “connected” to the infected end-point.
 
 My summary of the question:
+
 What is the User interface mechanisim Hacker Strike should implement to regulate RansonShield App Process Blocker within an associated user group.
 
 So, as I look at this, I think the answer is:
+
 Use the Baseline Behavior Injector, where the user's 'acceptable' behavior is captured.  In my head this is where all expectations should be exercised, resources and interconnects mapped.
 
+Your solutions lead me to think I don't know what the question is.
+
+1. "Network" should be defined via the "Baseline Behavior".
+2. "Shield" is blocking access to a resource. 
+3. "Self-Healing" ?  Wouldn't that be Baseline Behaviour Modification ?
+
+.... well I think I'm lost
 
 Notes:
 The new diagram with numbered lables.
