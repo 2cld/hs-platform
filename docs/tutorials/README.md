@@ -18,6 +18,6 @@ On a Microsoft Surface an hsadmin user was created.  The intent is to model a no
 1. Login to device using local hsadmin user account.
 2. Turn on OBS and start recording
 3. Login to hsadmin@horseoff.com in the google browser.
-4. Go to [http://hs.2cld.net/docs/tutorials/](http://hs.2cld.net/docs/tutorials/) to see this document.
+4. Go to [http://hs.2cld.net/tutorials/](http://hs.2cld.net/tutorials/) to see this document.
 5. Go to [https://hackerstrike.com/](https://hackerstrike.com/) and walk through a signup.
 6. keep documenting steps
